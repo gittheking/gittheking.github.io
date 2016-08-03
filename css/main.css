@@ -1,0 +1,32 @@
+body {
+  background-color: #111;
+  overflow: hidden;
+}
+
+.background-image {
+  background: url('../img/bw_ski_lift_1920_1440.png') no-repeat center center fixed; 
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.name {
+  color: #111;
+  background: url('../img/bw_ski_lift_1920_1440_light.png') no-repeat center center fixed;
+  font-family: helvetica;
+  font-size: 12vw;
+  font-weight: bolder;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-65%);
+  -webkit-background-clip: text;
+  -webkit-filter: invert(10%);
+  -webkit-text-fill-color: transparent;
+  z-index: 1000;
+}
+
+span:hover {
+  cursor: pointer;
+}
