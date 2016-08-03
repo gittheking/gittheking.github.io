@@ -3,6 +3,25 @@ body {
   overflow: hidden;
 }
 
+span {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 600px;
+  margin: 30% auto;
+}
+
+nav img {
+  color: #fafafa;
+  height: 100px;
+  margin: auto;
+  width: 100px;
+}
+
 .background-image {
   background: url('../img/bw_ski_lift_1920_1440.png') no-repeat center center fixed; 
   background-size: cover;
@@ -22,9 +41,40 @@ body {
   text-align: center;
   transform: translateY(-65%);
   -webkit-background-clip: text;
-  -webkit-filter: invert(10%);
+  -webkit-filter: invert(90%);
   -webkit-text-fill-color: transparent;
   z-index: 1000;
+}
+
+.modal-container {
+  background-color: #222;
+  color: #fafafa;
+  font-size: 8vw;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: visibility 0s, opacity .25s linear;
+  visibility: hidden;
+  z-index: 2000;
+}
+
+.space {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+  .rwd-break { display: none; }
+  .space { display: inline; }
 }
 
 span:hover {
