@@ -43,6 +43,7 @@
     name.style.height         = `${window.innerHeight}px`;
     name.style.width          = `${window.innerWidth}px`;
     name.style.backgroundSize = 'auto auto';
+    name.style.transform      = `translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
     modal.style.height        = `${window.innerHeight}px`;
     modal.style.width         = `${window.innerWidth}px`
   });

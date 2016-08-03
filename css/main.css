@@ -8,18 +8,19 @@ span {
 }
 
 nav {
+  bottom: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   position: fixed;
-  bottom: 0;
+  width: 100%;
   z-index: 2000;
 }
 
 nav img {
   color: #fafafa;
-  height: 100px;
-  margin: auto;
+  height: 12vw;
+  margin: 0 15px 15px 15px;
   width: 100px;
 }
 
@@ -35,12 +36,12 @@ nav img {
   color: #111;
   background: url('../img/bw_ski_lift_1920_1440_light.png') no-repeat center center fixed;
   font-family: helvetica;
-  font-size: 12vw;
+  font-size: 14vw;
   font-weight: bolder;
   position: relative;
   margin: 0 auto;
   text-align: center;
-  transform: translateY(-65%);
+  /*transform: translateY(-65%);*/
   -webkit-background-clip: text;
   -webkit-filter: invert(90%);
   -webkit-text-fill-color: transparent;
