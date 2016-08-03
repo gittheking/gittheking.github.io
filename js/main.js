@@ -22,7 +22,7 @@
     name.style.transform       = `perspective(10000px) 
                                   rotateX(${(middleY - event.clientY)/90}deg) 
                                   rotateY(${(middleX - event.clientX)/160}deg)
-                                  translateY(-65%)`;
+                                  translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
   });
 
   name.addEventListener('click', event => {
