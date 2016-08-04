@@ -19,7 +19,7 @@ nav {
 
 nav img {
   color: #fafafa;
-  height: 10vw;
+  height: 10vh;
   margin: 0 15px 15px 15px;
   width: 100px;
 }
@@ -51,7 +51,7 @@ nav img {
 .modal-container {
   background-color: #222;
   color: #fafafa;
-  font-size: 8vw;
+  font-size: 8vh;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -77,6 +77,9 @@ nav img {
 @media screen and (min-width: 768px){
   .rwd-break { display: none; }
   .space { display: inline; }
+  .name {
+    transform: translateY(-75%);
+  }
 }
 
 span:hover {
