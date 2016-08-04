@@ -1,11 +1,11 @@
 'use strict';
-(() => {
+( function() {
 
-  const background          = document.querySelector('.background-image');
-  const body                = document.querySelector('body');
-  const name                = document.querySelector('.name');
-  const modal               = document.querySelector('.modal-container');
-  const close               = document.querySelector('.close');
+  var background          = document.querySelector('.background-image');
+  var body                = document.querySelector('body');
+  var name                = document.querySelector('.name');
+  var modal               = document.querySelector('.modal-container');
+  var close               = document.querySelector('.close');
 
   background.style.height   = `${window.innerHeight}px`;
   background.style.width    = `${window.innerWidth}px`;
@@ -14,8 +14,8 @@
   name.style.backgroundSize = 'auto auto';
 
   document.addEventListener('mousemove', event => {
-    const middleX              = window.innerWidth / 2;
-    const middleY              = window.innerHeight / 2;
+    var middleX              = window.innerWidth / 2;
+    var middleY              = window.innerHeight / 2;
     background.style.transform = `perspective(1000px) 
                                   rotateX(${(-1)*(middleY - event.clientY)/90}deg) 
                                   rotateY(${(middleX - event.clientX)/160}deg)`;
