@@ -24,9 +24,11 @@ nav {
 
 nav img {
   color: #fafafa;
+  filter: drop-shadow(0 5px 5px #222);
   height: 10vh;
   margin: 0 15px 15px 15px;
   width: 100px;
+  -webkit-filter: drop-shadow( 0 5px 5px #222);
 }
 
 .background-image {
