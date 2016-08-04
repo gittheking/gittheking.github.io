@@ -9,8 +9,6 @@
 
   background.style.height   = `${window.innerHeight}px`;
   background.style.width    = `${window.innerWidth}px`;
-  name.style.height         = `${window.innerHeight}px`;
-  name.style.width          = `${window.innerWidth}px`;
   name.style.backgroundSize = 'auto auto';
 
   if (navigator.vendor.indexOf('Apple') < 0) {
@@ -23,7 +21,7 @@
       name.style.transform       = `perspective(10000px) 
                                     rotateX(${(middleY - event.clientY)/90}deg) 
                                     rotateY(${(middleX - event.clientX)/160}deg)
-                                    translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
+                                    translateY(-${window.innerWidth > 768 ? 50 : 75 }%)`;
     });
   }
 
@@ -42,10 +40,8 @@
   window.addEventListener('resize', function(event) {
     background.style.height   = `${window.innerHeight}px`;
     background.style.width    = `${window.innerWidth}px`;
-    name.style.height         = `${window.innerHeight}px`;
-    name.style.width          = `${window.innerWidth}px`;
     name.style.backgroundSize = 'auto auto';
-    name.style.transform      = `translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
+    name.style.transform      = `translateY(-${window.innerWidth > 768 ? 50 : 75 }%)`;
     modal.style.height        = `${window.innerHeight}px`;
     modal.style.width         = `${window.innerWidth}px`
   });
