@@ -13,31 +13,33 @@
   name.style.width          = `${window.innerWidth}px`;
   name.style.backgroundSize = 'auto auto';
 
-  document.addEventListener('mousemove', event => {
-    var middleX              = window.innerWidth / 2;
-    var middleY              = window.innerHeight / 2;
-    background.style.transform = `perspective(1000px) 
-                                  rotateX(${(-1)*(middleY - event.clientY)/90}deg) 
-                                  rotateY(${(middleX - event.clientX)/160}deg)`;
-    name.style.transform       = `perspective(10000px) 
-                                  rotateX(${(middleY - event.clientY)/90}deg) 
-                                  rotateY(${(middleX - event.clientX)/160}deg)
-                                  translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
-  });
+  if (navigator.vendor.indexOf('Apple') < 0) {
+    document.addEventListener('mousemove', function (event) {
+      var middleX              = window.innerWidth / 2;
+      var middleY              = window.innerHeight / 2;
+      background.style.transform = `perspective(1000px) 
+                                    rotateX(${(-1)*(middleY - event.clientY)/90}deg) 
+                                    rotateY(${(middleX - event.clientX)/160}deg)`;
+      name.style.transform       = `perspective(10000px) 
+                                    rotateX(${(middleY - event.clientY)/90}deg) 
+                                    rotateY(${(middleX - event.clientX)/160}deg)
+                                    translateY(-${window.innerWidth > 768 ? 65 : 85 }%)`;
+    });
+  }
 
-  name.addEventListener('click', event => {
+  name.addEventListener('click', function(event) {
     modal.style.visibility  = 'visible';
     modal.style.opacity     = '0.8';
     modal.style.height      = `${window.innerHeight}px`;
     modal.style.width       = `${window.innerWidth}px`
   });
 
-  close.addEventListener('click', event => {
+  close.addEventListener('click', function(event) {
     modal.style.visibility  = 'hidden';
     modal.style.opacity     = '0';
   });
 
-  window.addEventListener('resize', event => {
+  window.addEventListener('resize', function(event) {
     background.style.height   = `${window.innerHeight}px`;
     background.style.width    = `${window.innerWidth}px`;
     name.style.height         = `${window.innerHeight}px`;
