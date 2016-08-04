@@ -19,7 +19,7 @@ nav {
 
 nav img {
   color: #fafafa;
-  height: 12vw;
+  height: 10vw;
   margin: 0 15px 15px 15px;
   width: 100px;
 }
@@ -41,7 +41,7 @@ nav img {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  /*transform: translateY(-65%);*/
+  transform: translateY(-65%);
   -webkit-background-clip: text;
   -webkit-filter: invert(90%);
   -webkit-text-fill-color: transparent;
