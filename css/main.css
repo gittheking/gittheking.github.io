@@ -10,7 +10,7 @@ span {
 nav {
   bottom: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   position: fixed;
   width: 100%;
