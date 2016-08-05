@@ -10,12 +10,6 @@ main {
   width: 100%;
 }
 
-h1 {
-  font-size: 10vw;
-  line-height: 10vw;
-  text-align: center;
-}
-
 nav {
   bottom: 0;
   display: flex;
@@ -56,6 +50,20 @@ nav img {
   z-index: 1000;
 }
 
+.name h1 {
+  font-size: 10vw;
+  line-height: 10vw;
+  margin: 0;
+  text-align: center;
+}
+
+.name h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+  margin: 0;
+  text-align: center;
+}
+
 .modal-container {
   background-color: #222;
   color: #fafafa;
@@ -82,11 +90,6 @@ nav img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px){
-  .rwd-break { display: none; }
-  .space { display: inline; }
-}
-
-span:hover {
+.name:hover {
   cursor: pointer;
 }
