@@ -101,5 +101,6 @@ nav img {
 }
 
 .name:hover {
+  color: #BABABA;
   cursor: pointer;
 }
