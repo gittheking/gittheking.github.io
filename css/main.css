@@ -1,5 +1,7 @@
 body {
   background-color: #111;
+  font-family: lato, helvetica;
+  font-weight: 100;
   overflow: hidden;
 }
 
@@ -8,7 +10,9 @@ main {
   width: 100%;
 }
 
-span {
+h1 {
+  font-size: 10vw;
+  line-height: 10vw;
   text-align: center;
 }
 
@@ -24,7 +28,7 @@ nav {
 
 nav img {
   color: #fafafa;
-  filter: drop-shadow(0 5px 5px #222);
+  filter: drop-shadow(0 5px 5px);
   height: 10vh;
   margin: 0 15px 15px 15px;
   width: 100px;
@@ -41,9 +45,6 @@ nav img {
 
 .name {
   color: #FAFAFA;
-  font-family: helvetica;
-  font-size: 14vw;
-  font-weight: bolder;
   overflow: hidden;
   position: absolute;
   margin: 0 auto;
