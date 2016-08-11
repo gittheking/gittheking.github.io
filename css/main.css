@@ -59,8 +59,8 @@ nav img {
 }
 
 .name h2 {
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 4vw;
+  font-weight: 400;
   line-height: 3vw;
   margin: 0;
   text-align: center;
@@ -72,6 +72,23 @@ nav img {
 
 .name h2:after {
   content:"\2014";
+}
+
+.about-me {
+  background: transparent;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  filter: drop-shadow(0 5px 5px);
+  font-size: 3vw;
+  margin-top: 20px;
+  outline: none;
+  -webkit-filter: drop-shadow(0 5px 5px);
+}
+
+.about-me:hover {
+  color: #111;
+  cursor: pointer;
+  background-color: #fafafa;
 }
 
 .modal-container {
@@ -96,11 +113,36 @@ nav img {
   right: 10%;
 }
 
+.bio {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 40em;
+}
+
 .close:hover {
   cursor: pointer;
 }
 
-.name:hover {
+@media only screen
+  and (min-device-width: 375px)
+  and (min-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .name h1 {
+      font-size: 15vw;
+      line-height: 15vw;
+    }
+    .name h2 {
+      font-size: 7vw;
+      line-height: 7vw;
+    }
+    .about-me {
+      font-size: 8vw;
+      font-weight: 300;
+    }
+  }
+
+/*.name:hover {
   color: #BABABA;
   cursor: pointer;
-}
+}*/

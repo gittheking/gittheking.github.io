@@ -1,11 +1,12 @@
 'use strict';
 ( function() {
 
-  var background          = document.querySelector('.background-image');
-  var body                = document.querySelector('body');
-  var name                = document.querySelector('.name');
-  var modal               = document.querySelector('.modal-container');
-  var close               = document.querySelector('.close');
+  var background            = document.querySelector('.background-image');
+  var body                  = document.querySelector('body');
+  var name                  = document.querySelector('.name');
+  var modal                 = document.querySelector('.modal-container');
+  var close                 = document.querySelector('.close');
+  var button                = document.querySelector('.about-me');
 
   background.style.height   = `${window.innerHeight}px`;
   background.style.width    = `${window.innerWidth}px`;
@@ -25,7 +26,7 @@
     });
   }
 
-  name.addEventListener('click', function(event) {
+  button.addEventListener('click', function(event) {
     modal.style.visibility  = 'visible';
     modal.style.opacity     = '0.8';
     modal.style.height      = `${window.innerHeight}px`;
