@@ -6,7 +6,6 @@
   var name                  = document.querySelector('.name');
   var modal                 = document.querySelector('.modal-container');
   var close                 = document.querySelector('.close');
-  var button                = document.querySelector('.about-me');
 
   background.style.height   = `${window.innerHeight}px`;
   background.style.width    = `${window.innerWidth}px`;
@@ -26,12 +25,12 @@
     });
   }
 
-  button.addEventListener('click', function(event) {
-    modal.style.visibility  = 'visible';
-    modal.style.opacity     = '0.8';
-    modal.style.height      = `${window.innerHeight}px`;
-    modal.style.width       = `${window.innerWidth}px`
-  });
+  // button.addEventListener('click', function(event) {
+  //   modal.style.visibility  = 'visible';
+  //   modal.style.opacity     = '0.8';
+  //   modal.style.height      = `${window.innerHeight}px`;
+  //   modal.style.width       = `${window.innerWidth}px`
+  // });
 
   close.addEventListener('click', function(event) {
     modal.style.visibility  = 'hidden';
