@@ -25,11 +25,6 @@
     });
   }
 
-  close.addEventListener('click', function(event) {
-    modal.style.visibility  = 'hidden';
-    modal.style.opacity     = '0';
-  });
-
   window.addEventListener('resize', function(event) {
     background.style.height   = `${window.innerHeight}px`;
     background.style.width    = `${window.innerWidth}px`;
