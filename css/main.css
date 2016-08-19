@@ -29,6 +29,14 @@ nav img {
   -webkit-filter: drop-shadow( 0 5px 5px #222);
 }
 
+#view-source {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
 .background-image {
   background: url('../img/bw_ski_lift_1920_1440.png') no-repeat center center fixed; 
   background-size: cover;
